@@ -1,0 +1,71 @@
+:root {
+    --bg-color: #10044Cff;
+    --main-color: #1E0E6Bff;
+    --second-color: #3731D3ff;
+    --purple: #A407FFff;
+    --pink: #FE41FDff;
+    --white: #fff;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navigation  */
+
+header {
+    display: block;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: var(--bg-color); */
+    padding: 10px;
+}
+
+nav a:visited,
+nav a:link {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+
+/* Hero Item */
+
+
+.heroContainer {
+    background-image: url(images/Hero_Image.jpg);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+/* Main */
+
+.ElementContainer {
+    Display: block;
+    text-align: center;
+
+}
+
+.Element {
+    height: 200px;
+    
+}

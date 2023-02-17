@@ -1,15 +1,17 @@
 :root {
     --bg-color: #10044Cff;
     --main-color: #1E0E6Bff;
-    --second-color: #3731D3ff;
+    --second-color: rgb(55, 49, 211);
     --purple: #A407FFff;
-    --pink: #FE41FDff;
+    --pink: rgb(254, 65, 253);
     --white: #fff;
+    --light-blue: rgb(35, 175, 240);
 }
 
 body{
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 
@@ -17,7 +19,7 @@ body{
 
 header {
     display: block;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -46,26 +48,120 @@ nav > ul > li {
 
 /* Hero Item */
 
-
-.heroContainer {
-    background-image: url(images/Hero_Image.jpg);
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 2em;
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 5px 5px 4px #000;
+    background-color:rgba(35, 175, 240, 0.3);
+    border-radius: 10px;
+    padding: 4px;
+    font-family: 'Share Tech Mono', monospace;
+    
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #000;
+}
+
+.heroContainer {
+    height: 100vh;
+    /* position:relative; */
+    display: flex;
+    background-image: url(images/Hero_Image.jpg);
+    background-size: cover;
+    background-position: center;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.hero {
+    /* position: absolute; */
+    align-items: center;
+    justify-content: center;
+    
+}
 /* Main */
 
 .ElementContainer {
-    Display: block;
+    Display: flex;
+    flex-direction: column;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
 
 }
 
 .Element {
-    height: 200px;
+    height: 400px;
+    color: var(--white);
+    background-size: 100% 66%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+   
+}
+
+.booking {
+    background-color: rgb(164, 7, 255);
+    background-image: linear-gradient(rgba(164, 7, 255, 0.5), rgba(164, 7, 255, 0.1)), url(images/booking.jpg);
+   
+
+}
+
+.game_info {
+    background-color: var(--pink);
+    background-image: linear-gradient(rgba(254, 65, 253, 0.5), rgba(254, 65, 253, 0.1)), url(images/Gameinfo.jpg);
     
+    
+}
+
+.contact {
+    background-color: var(--second-color);
+    background-image: linear-gradient(rgba(55, 49, 211, 0.5), rgba(55, 49, 211, 0.1)), url(images/contact.jpg);
+   
+}
+
+.highscores {
+    background-color: var(--light-blue);
+    background-image: linear-gradient(rgba(35, 175, 240, 0.5), rgba(35, 175, 240, 0.1)), url(images/highscore.jpg);
+    
+}
+
+footer {
+    background-color: var(--bg-color);
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: #fff;
+}
+
+@media screen and (min-width: 913px) {
+    
+    h1{
+        font-size: 6rem;
+    }
+    
+    .ElementContainer {
+        display: flex;
+        flex-direction: row;
+        flex-basis:auto;
+        width: 100%;
+     }
+
+     .Element {
+        flex-basis: auto;
+        flex-grow: 2;
+     }
 }

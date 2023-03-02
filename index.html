@@ -14,6 +14,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+        <script src="main.js" defer></script>
+
 
     </head>
     <body>
@@ -22,23 +27,29 @@
         <![endif]-->
         
         <header>
-            <nav>
-               <!-- <button id="Nav-Button"></button> -->
-                <ul>
+            <nav class="navbar">
+            <div class="hamburger navbar_toggle">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+             </div>   
+                <ul class="main_nav">
                     <li>
-                        <a href="booking">Private Rooms</a>
+                        <a href="booking" class="nav_links">Private Rooms</a>
                     </li>
                     <li>
-                        <a href="Game">Game Info</a>
+                        <a href="Game" class="nav_links">Game Info</a>
                     </li>
                     <li>
-                        <a href="Contact">Contact Us</a>
+                        <a href=#contact class="nav_links">Contact Us</a>
                     </li>
                     <li>
-                        <a href="Highscores">High Scores</a>
+                        <a href="Highscores" class="nav_links">High Scores</a>
                     </li>
                 </ul>
+            
             </nav>
+
         </header>
         <main>
             <section class="heroContainer">
@@ -82,13 +93,21 @@
                         <div class="content">
                             <p> Directions and more! </p>
                         </div>
-                        <footer><a href="contact.html"><h2>Contact Us</h2></a></footer>
+                        <footer><a href=#contact><h2>Contact Us</h2></a></footer>
                 </article>
             </div>
+            <section>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.495318835537!2d-84.49824358431079!3d39.095191942865185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b16f2c61918f%3A0xaa6ced89eefe1a36!2sNewport%20on%20the%20Levee!5e0!3m2!1sen!2sus!4v1677702886927!5m2!1sen!2sus" ></iframe>
+            </section>
         </main>
 
-        <footer>
-          
+        <footer class="foot">
+          <h2 id="contact">Contact Us!</h2>  
+          <h3>Aracadian Dreams</h3>
+          <p>One Levee Wy, Newport Kentucky 41017</p>
+          <p>First level at the levee</p>
+          <p>Email:</p><a href="info@arcadiandreams.com">info@arcaidiandreams.com</a></p>
+          <p>Phone: 859-555-5955</p>
         </footer>
                 
         <script src="main.js" async defer></script>

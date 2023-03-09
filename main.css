@@ -12,6 +12,21 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: var(--bg-color);
+    }
+
+/* img {
+    width: 100%;
+}     */
+
+.snap_container{
+    height: 100%;
+    /* overflow-y:scroll; */
+    scroll-snap-type: y mandatory;
+
+}
+
+.snap{
+    scroll-snap-align: end;
 }
 
 
@@ -24,7 +39,6 @@ body {
     left: 0;
     width: 100%;
     height: 2rem;
-    
     padding: 10px;
     text-align:right;
     
@@ -39,25 +53,35 @@ body {
     font-size: 20px;
     align-items: center;
 
-
 }
 
 .hamburger {
     display: inline-block;
-    
+    vertical-align: middle;
 }
 
 .hamburger.menu_open .bar1 {
-    transform: rotate(-45deg) translate(0, 15px);
+    transform: rotate(-45deg) translate(0, 17px);
+    left: -25px;
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+
+
+
 }
 
 .hamburger.menu_open .bar2 {
+    transform: translate(-10px);
     opacity: 0;
 
 }
 
 .hamburger.menu_open .bar3 {
-    transform: rotate(45deg) translate(0, -15px);
+    transform: rotate(45deg) translate(0, -17px);
+    left: -25px;
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+
 }
 
 .bar {
@@ -65,15 +89,14 @@ body {
     height: 5px;
     background-color: #fff;
     margin: 6px 0;
-    transition: 0.4s all;
+    transition: 0.3s all ease-in-out;
     position: relative;
     align-items: center;
-        
+    right: 15px;
 }
 
 .main_nav {
     display: none;
-
 }
 
 .show_nav{
@@ -82,10 +105,13 @@ body {
     width: 100vw;
     height: 100vh;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: start;
+    margin: 0 auto;
     position: relative;
+    right: 15px;
+}
 
-  }
+
 
   .main_nav li{
     width: 100%;
@@ -94,10 +120,14 @@ body {
     font-size: 35px;
     justify-content: center;
     text-align: center;
+    margin-left: -32px;
+    list-style-type: none;
     padding: 0%;
     font-family: 'Teko', sans-serif;
 
-  }
+}
+
+
   .navbar_toggle {
     margin-left: 5%;
     margin-right: 5%;
@@ -105,12 +135,38 @@ body {
     color: #ffffff;
     background: transparent;
     border-color: transparent;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
     display: block;
-  }
- 
 
+  }
+
+h1{
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Share Tech Mono', monospace;
+    text-shadow: 5px 5px 4px var(--pink);
+
+}
+
+p{
+    color:#fff;
+}
+
+.head_container {
+    text-align: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    height: 100%;
+    margin-top: 4rem;
+    background-size: 100px 10px;
+    background: linear-gradient(to bottom, var(--bg-color) , var(--second-color) 70%, var(--purple),var(--pink), var(--purple), var(--second-color), var(--bg-color) );
+}
+
+.head_container.navAct {
+    /* padding: 5rem; */
+    margin-top: 18rem;
+}
 
 /* Hero Item */
 
@@ -164,7 +220,8 @@ a {
 }
 
 a:hover {
-    color:var(--pink);
+    color:rgba(254, 65, 253, .75);
+    text-shadow: 3px 3px 3px var(--purple)
 }
 
 /* Main */
@@ -183,8 +240,7 @@ a:hover {
 
 .card {
     display: grid;
-    grid-template-rows: max-content 200px 1fr;
-    border: 1px solid #999;
+    grid-template-rows: max-content 320px 1fr;
     color: var(--white);
     text-align: center;
     font-size: 1.25rem;
@@ -220,22 +276,32 @@ a:hover {
     border-radius: 10px;
     text-align: center;
     align-items: center;
-    transition:ease-in-out;
+    box-shadow: inset 10px 5px 20px 5px var(--pink);
+    transition: ease-in-out;
     
+}
+
+.card footer:hover {
+    box-shadow:  10px 5px 20px 5px var(--pink);
+    transition: .3s ease;
+
+
 }
 
 .card footer a {
     margin: 3px;
 }
 
-
+.map_container {
+    padding-top: 30px;
+}
 
 .map {
     display: flex;
     position: relative;
     margin: 0 auto;
     width: 375px;
-    height: 50vh;
+    height: 35vh;
     margin-top: 2.5rem;
     border: none;
 }
@@ -246,21 +312,92 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    margin: 5rem 0 7rem 0;
-    padding: 0;
+    height:100%;
+    margin: 7rem 0 5rem 0;
+    padding-bottom: 1rem;
     color: #fff;
     font-family: 'Teko', sans-serif;
     text-align: center;
     line-height: 0;
+    font-size: 1.5rem;
+   
+   
 }
 
 .foot > h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 4px #000;
 }
 
 .foot > h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 4px #000;
 }
+
+
+
+/* BOOKING PAGE ITEMS */
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pr_container{
+    display: flex;
+    flex-flow:column;
+    font-family: 'Share Tech Mono', monospace;
+    /* border-radius: 15px; */
+    width: 100vw;
+    background-image: url(/images/party_room.jpg);
+    background-repeat: no-repeat;
+    background-position:50%;
+    background-size: cover;
+    align-items: flex-end;
+    font-size: 3rem;
+    height: calc(100vh - 280px);
+    box-shadow:
+    0 0 30px 15px rgba(255, 255, 255, .2),  
+    0 0 50px 25px rgba(255, 0, 255, .2), 
+    0 0 70px 30px rgba(0, 255, 255, .2);
+
+        
+
+}
+
+.pr_item {
+    
+align-items: flex-end;
+    
+}
+
+.pr_item p {
+    font-size: 1rem;
+
+}
+
+
+
+/* FORM STYLING */
+
+.form_container {
+    height: calc(100vh - 280px);
+    box-shadow:
+    0 0 30px 15px rgba(255, 255, 255, .2),  
+    0 0 50px 25px rgba(255, 0, 255, .2), 
+    0 0 70px 30px rgba(0, 255, 255, .2);
+    font-size: 3rem;
+}
+
+form {
+    color: #fff;
+}
+
+input[type=text] {
+    border-radius: 14px;
+    padding: 1rem;
+}
+
 
 @media screen and (min-width: 913px) {
     
@@ -280,12 +417,15 @@ a:hover {
         justify-content: space-between;
         list-style: none;
         
+        
 
 
     }
       .main_nav li:hover{
         background-color: rgba(35, 175, 240, .5);
         border-radius: 10px;
+       
+
 
         
       }
@@ -293,24 +433,29 @@ a:hover {
       .main_nav li{
         display: inline;
         color: #ffffff;
-        text-shadow: 5px 5px 4px #000;
+        text-shadow: 6px 6px 5px #000;
         position:relative; 
         top: -20px;
-        font-size: 25px;
+        font-size: 35px;
+
 
 
     }
       .main_nav li a{
         color: #ffffff;
         position:relative;
-        top: 10px;
+        top: 5px;
       }
 
       .navbar_toggle {
         display: none;
       }
     
-    
+    h1 {
+        font-size: 6rem;
+    }
+
+
     .hero h1{
         font-size: 7rem;
     }
@@ -325,8 +470,13 @@ a:hover {
             
     }
 
+    .cards {
+        height: 100vh;
+    }
+
     .card {
         border-radius: 15px;
+        border: 1px solid #999;
 
     }
     .card img {
@@ -338,5 +488,20 @@ a:hover {
     
     .map {
         width: 935px;
+        height: 50vh;
+    }
+
+    .foot{
+        margin: 7rem 0 10rem 0;
+        height: 100vh;
+    }
+
+    .pr_container {
+    flex-flow:row;
+    width: 50vw;
+    }
+
+    .form_container {
+        width: 50vw;
     }
 }

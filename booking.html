@@ -49,17 +49,31 @@
 
         <section class="pr_container">
            <div class="pr_item"> 
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.est laborum.</p>
+             <p>Celebrate your next birthday or company event!</p>
            </div>
              
         </section>   
         <br>
         <section class="form_container">
         <form>
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name">
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name">
+        <div class="text_inputs">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+        </div>
+        <div class="text_inputs">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+        </div>  
+            <label for="date_book">Date:</label>
+            <input type="date" id="date_book" name="date_book"><br>
+            <label for="room_type">Room:</label>
+            <select name="room_type" id="room_type">
+                <option value="birthday">Birthday Room</option>
+                <option value="pr_arcade">Private Arcade</option>
+                <option value="banquet">Banquet Room</option>
+            </select>
+            <label for="special_inst">Special Instructions:</label><br>
+            <textarea id="special_inst" name="special_inst" rows="30" cols="60"></textarea>
             
         </form>
         </section>

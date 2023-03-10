@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #10044Cff;
+    --bg-color: rgb(16, 4, 76);
     --main-color: #1E0E6Bff;
     --second-color: rgb(55, 49, 211);
     --purple: rgb(164, 7, 255);
@@ -12,6 +12,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: var(--bg-color);
+    padding: 0;
     }
 
 /* img {
@@ -96,7 +97,8 @@ body {
 }
 
 .main_nav {
-    display: none;
+    /* display: none; */
+    opacity: 0
 }
 
 .show_nav{
@@ -109,6 +111,9 @@ body {
     margin: 0 auto;
     position: relative;
     right: 15px;
+    opacity: 100%;
+    transition: opacity .4s ease-in-out;
+    
 }
 
 
@@ -124,6 +129,7 @@ body {
     list-style-type: none;
     padding: 0%;
     font-family: 'Teko', sans-serif;
+
 
 }
 
@@ -156,15 +162,14 @@ p{
 .head_container {
     text-align: center;
     justify-content: center;
-    /* padding: 1rem; */
     height: 100%;
     margin-top: 4rem;
     background-size: 100px 10px;
     background: linear-gradient(to bottom, var(--bg-color) , var(--second-color) 70%, var(--purple),var(--pink), var(--purple), var(--second-color), var(--bg-color) );
+    transition: all .2s ease-in-out
 }
 
 .head_container.navAct {
-    /* padding: 5rem; */
     margin-top: 18rem;
 }
 
@@ -340,27 +345,28 @@ a:hover {
 
 .wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    /* border-radius: 15px; */
+    overflow:hidden;
+    border-top: solid;
+    border-image:linear-gradient(to right, transparent, var(--second-color) , transparent ) 1;
+    
 }
 
 .pr_container{
     display: flex;
     flex-flow:column;
     font-family: 'Share Tech Mono', monospace;
-    /* border-radius: 15px; */
     width: 100vw;
-    background-image: url(/images/party_room.jpg);
+    background-image:linear-gradient(to bottom, transparent 50%,rgb(16, 4, 76)) , url(/images/party_room_3.jpg);
     background-repeat: no-repeat;
     background-position:50%;
     background-size: cover;
     align-items: flex-end;
     font-size: 3rem;
     height: calc(100vh - 280px);
-    box-shadow:
-    0 0 30px 15px rgba(255, 255, 255, .2),  
-    0 0 50px 25px rgba(255, 0, 255, .2), 
-    0 0 70px 30px rgba(0, 255, 255, .2);
-
+   
         
 
 }
@@ -372,7 +378,7 @@ align-items: flex-end;
 }
 
 .pr_item p {
-    font-size: 1rem;
+    font-size: 2.5rem;
 
 }
 
@@ -382,23 +388,55 @@ align-items: flex-end;
 
 .form_container {
     height: calc(100vh - 280px);
-    box-shadow:
-    0 0 30px 15px rgba(255, 255, 255, .2),  
-    0 0 50px 25px rgba(255, 0, 255, .2), 
-    0 0 70px 30px rgba(0, 255, 255, .2);
     font-size: 3rem;
+    display:flex;
+    justify-content: center;
+
+    
 }
 
 form {
     color: #fff;
+    
+}
+
+form .text_inputs {
+    display: flex;
+}
+
+form  input[type=text] {
+    align-items: end;
+}
+
+label {
+    font-size:1.25rem;
 }
 
 input[type=text] {
     border-radius: 14px;
-    padding: 1rem;
+    width:50%;
+    height:1.25rem;
 }
 
-
+input[type="date"]{
+    background-color: #0080ff;
+    padding: 15px;
+    
+    /* transform: translate(-50%,-50%); */
+ 
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
 @media screen and (min-width: 913px) {
     
     .navbar{
@@ -416,6 +454,7 @@ input[type=text] {
         margin-right: 2%;
         justify-content: space-between;
         list-style: none;
+        opacity: 100%;
         
         
 
@@ -496,9 +535,18 @@ input[type=text] {
         height: 100vh;
     }
 
+    .wrapper {
+    flex-direction: row;
+    border-image:linear-gradient(to right, transparent, var(--second-color) , transparent ) 1;
+    border-bottom: solid;
+    
+
+    }
     .pr_container {
     flex-flow:row;
     width: 50vw;
+    background-image:linear-gradient(to right, transparent 50%,rgb(16, 4, 76)) , url(/images/party_room_3.jpg);
+
     }
 
     .form_container {

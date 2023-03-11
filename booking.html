@@ -55,26 +55,37 @@
         </section>   
         <br>
         <section class="form_container">
+              
         <form>
+        <fieldset>
+            <legend>Book Now!</legend>
         <div class="text_inputs">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br>
         </div>
+
+
         <div class="text_inputs">
             <label for="email">Email:</label>
             <input type="text" id="email" name="email"><br>
         </div>  
-            <label for="date_book">Date:</label>
-            <input type="date" id="date_book" name="date_book"><br>
-            <label for="room_type">Room:</label>
+        
+        <div class="date_block">
+            <label for="date_book" id="db">Date:</label>
+            <input type="date" id="date_book" name="date_book">
+                       
+            <label for="room_type" id="rt">Room:</label>
             <select name="room_type" id="room_type">
                 <option value="birthday">Birthday Room</option>
                 <option value="pr_arcade">Private Arcade</option>
                 <option value="banquet">Banquet Room</option>
-            </select>
+            </select><br>
+        </div>    
+            
+            
             <label for="special_inst">Special Instructions:</label><br>
             <textarea id="special_inst" name="special_inst" rows="30" cols="60"></textarea>
-            
+        </fieldset>
         </form>
         </section>
         </section>

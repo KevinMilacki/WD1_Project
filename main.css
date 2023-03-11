@@ -13,6 +13,8 @@ body {
     box-sizing: border-box;
     background-color: var(--bg-color);
     padding: 0;
+    overflow: scroll;
+    overflow-x: hidden;
     }
 
 /* img {
@@ -339,7 +341,86 @@ a:hover {
     text-shadow: 5px 5px 4px #000;
 }
 
+/* GAME INFO PAGE */
 
+
+.info_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.accord_container {
+    margin: 0 auto;
+    max-height: 0;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:rgba(35, 175, 240, .3);
+    transition: max-height .5s ease-in-out;
+    border-radius: 15px;
+    
+}
+
+.accord_head {
+    margin: 0 auto;
+    width: 90%;
+    height: 5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    text-align: left;
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--light-blue);
+    color: #fff;
+    margin-bottom: 2px;
+
+    /* box-shadow: 1px 3px 3px var(--pink) */
+}
+
+.accord_head:hover{
+    color: var(--pink);
+    text-shadow: 2px 2px 3px #000;
+}
+
+.accord_head:active {
+    background-color: var(--purple);
+}
+
+.accord_head::after{
+    content:"\002B";
+    position:absolute;
+    right: 2rem;
+}
+
+.accord_head.active::after{
+    content:"\2212";
+    position:absolute;
+    right: 2rem;
+}
+
+.accord_item {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Teko', sans-serif;
+    line-height:0;
+    padding-bottom: 2rem;
+    padding: 2rem 1rem 1rem 2rem;
+
+}
+
+.accord_item img {
+    /* height: 300px; */
+    width: 300px;
+    aspect-ratio: 3/4;
+    
+}
 
 /* BOOKING PAGE ITEMS */
 
@@ -348,9 +429,9 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     /* border-radius: 15px; */
-    overflow:hidden;
-    border-top: solid;
-    border-image:linear-gradient(to right, transparent, var(--second-color) , transparent ) 1;
+    /* overflow:hidden; */
+    /* border-top: solid; */
+    /* border-image:linear-gradient(to right, transparent, var(--second-color) , transparent ) 1; */
     
 }
 
@@ -389,14 +470,30 @@ align-items: flex-end;
 .form_container {
     height: calc(100vh - 280px);
     font-size: 3rem;
-    display:flex;
-    justify-content: center;
+    display:inline-block;
+    margin: 0 auto;
+   
+
 
     
 }
 
+fieldset {
+    border: 3px solid var(--second-color);
+    width: 50%;
+    /* padding: 1rem; */
+    /* line-height: 2rem; */
+    border-radius: 14px;
+    font-family: 'Share Tech Mono', monospace;
+    text-shadow: 3px 3px 5px var(--pink);
+    /* display: flex;
+    flex-direction: column; */
+}
+
 form {
     color: #fff;
+    line-height: 2.5rem;
+    
     
 }
 
@@ -405,7 +502,7 @@ form .text_inputs {
 }
 
 form  input[type=text] {
-    align-items: end;
+
 }
 
 label {
@@ -415,28 +512,61 @@ label {
 input[type=text] {
     border-radius: 14px;
     width:50%;
-    height:1.25rem;
+    /* height:1.25rem; */
+     
 }
+
+
+.date_block{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
 
 input[type="date"]{
     background-color: #0080ff;
-    padding: 15px;
-    
-    /* transform: translate(-50%,-50%); */
- 
+    padding: 8px;
     font-family: "Roboto Mono",monospace;
     color: #ffffff;
     font-size: 18px;
     border: none;
     outline: none;
     border-radius: 5px;
+    width: 49%;
+
 }
 ::-webkit-calendar-picker-indicator{
     background-color: #ffffff;
-    padding: 5px;
+    /* padding: 5px; */
     cursor: pointer;
     border-radius: 3px;
 }
+
+select {
+    border: none;
+    border-radius: 5px;
+    width: 49%;
+    background-color: #0080ff;
+    height:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 1.25rem;
+}
+
+
+option:hover{
+    color: var(--pink);
+ 
+}
+
+#db, #rt {
+    /* width:50%; */
+    margin: 0;
+    padding: 0;
+}
+
+
 @media screen and (min-width: 913px) {
     
     .navbar{
@@ -538,7 +668,7 @@ input[type="date"]{
     .wrapper {
     flex-direction: row;
     border-image:linear-gradient(to right, transparent, var(--second-color) , transparent ) 1;
-    border-bottom: solid;
+    /* border-bottom: solid; */
     
 
     }
@@ -551,5 +681,7 @@ input[type="date"]{
 
     .form_container {
         width: 50vw;
+        position: relative;
+        left: 300px;
     }
 }

@@ -56,23 +56,23 @@
         <br>
         <section class="form_container">
               
-        <form>
+        <form action="#" >
         <fieldset>
             <legend>Book Now!</legend>
         <div class="text_inputs">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name" required><br>
         </div>
 
 
         <div class="text_inputs">
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br>
+            <input type="text" id="email" name="email" required><br>
         </div>  
         
         <div class="date_block">
             <label for="date_book" id="db">Date:</label>
-            <input type="date" id="date_book" name="date_book">
+            <input type="date" id="date_book" name="date_book" required>
                        
             <label for="room_type" id="rt">Room:</label>
             <select name="room_type" id="room_type">
@@ -84,7 +84,8 @@
             
             
             <label for="special_inst">Special Instructions:</label><br>
-            <textarea id="special_inst" name="special_inst" rows="30" cols="60"></textarea>
+            <textarea id="special_inst" name="special_inst" rows="20" cols="60"></textarea>
+            <input type="submit" value="Submit">
         </fieldset>
         </form>
         </section>

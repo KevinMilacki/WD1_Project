@@ -440,7 +440,7 @@ a:hover {
     flex-flow:column;
     font-family: 'Share Tech Mono', monospace;
     width: 100vw;
-    background-image:linear-gradient(to bottom, transparent 50%,rgb(16, 4, 76)) , url(/images/party_room_3.jpg);
+    background-image:linear-gradient(to bottom, transparent 50%,rgb(16, 4, 76)) , url(images/party_room.jpg);
     background-repeat: no-repeat;
     background-position:50%;
     background-size: cover;
@@ -453,9 +453,9 @@ a:hover {
 }
 
 .pr_item {
-    
-align-items: flex-end;
-    
+    text-align: center;  
+    align-items: flex-end;
+    text-shadow: 3px 3px 5px #000;
 }
 
 .pr_item p {
@@ -480,7 +480,7 @@ align-items: flex-end;
 
 fieldset {
     border: 3px solid var(--second-color);
-    width: 50%;
+    width: 80%;
     /* padding: 1rem; */
     /* line-height: 2rem; */
     border-radius: 14px;
@@ -493,12 +493,14 @@ fieldset {
 form {
     color: #fff;
     line-height: 2.5rem;
-    
+
     
 }
 
 form .text_inputs {
     display: flex;
+    margin-bottom: 10px;
+
 }
 
 form  input[type=text] {
@@ -511,10 +513,10 @@ label {
 
 input[type=text] {
     border-radius: 14px;
-    width:50%;
-    /* height:1.25rem; */
+    width:100%;
      
 }
+
 
 
 .date_block{
@@ -525,15 +527,16 @@ input[type=text] {
 
 
 input[type="date"]{
-    background-color: #0080ff;
+    background-color:var(--light-blue);
     padding: 8px;
-    font-family: "Roboto Mono",monospace;
+    margin: 2px;
+    /* font-family: "Roboto Mono",monospace; */
     color: #ffffff;
-    font-size: 18px;
+    font-size: 12px;
     border: none;
     outline: none;
     border-radius: 5px;
-    width: 49%;
+    width: 45%;
 
 }
 ::-webkit-calendar-picker-indicator{
@@ -546,17 +549,20 @@ input[type="date"]{
 select {
     border: none;
     border-radius: 5px;
-    width: 49%;
-    background-color: #0080ff;
+    width: 45%;
+    font-size: 12px;
+    color: #fff;
+    background-color: var(--light-blue);
     height:auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    height: 1.25rem;
+    /* height: 1.25rem; */
 }
 
 
 option:hover{
     color: var(--pink);
+    cursor: pointer;
  
 }
 
@@ -566,6 +572,66 @@ option:hover{
     padding: 0;
 }
 
+input[type="submit"]{
+    width: 102%;
+    padding: 1rem;
+    background-color: var(--light-blue);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* HIGH SCORES PAGE */
+
+
+
+.table_container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    font-family: 'Teko', sans-serif;
+    
+}
+
+table {
+    color: #fff;
+    padding: 5px;
+    margin: 3px;
+    font-size: 2rem;
+    border: 1px solid var(--purple);
+    border-radius: 0 0 5px 5px;
+
+    
+
+}
+table caption{
+    font-size: 3rem;
+    text-shadow: 4px 4px 5px #000;
+    background-color: var(--light-blue);
+    /* border:3px solid red; */
+    border-radius: 5px 5px 0 0;
+}
+
+td {
+    padding: 3px;
+    text-align: start;
+
+}
+
+td.num {
+    text-align: end;
+}
+
+th {
+    text-align: start;
+    padding: 5px;
+}
 
 @media screen and (min-width: 913px) {
     
@@ -672,10 +738,16 @@ option:hover{
     
 
     }
+
+    fieldset{
+        width: 50%;
+    }    
+    
+
     .pr_container {
     flex-flow:row;
     width: 50vw;
-    background-image:linear-gradient(to right, transparent 50%,rgb(16, 4, 76)) , url(/images/party_room_3.jpg);
+    background-image:linear-gradient(to right, transparent 50%,rgb(16, 4, 76)) , url(images/party_room.jpg);
 
     }
 
@@ -683,5 +755,13 @@ option:hover{
         width: 50vw;
         position: relative;
         left: 300px;
+    }
+
+    input[type="date"] {
+        font-size: 18px;
+    }
+    
+    select{
+        font-size: 18px;
     }
 }

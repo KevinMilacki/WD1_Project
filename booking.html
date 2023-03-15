@@ -1,98 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arcadian Dreams -- Private Rooms</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
+      <nav class="navbar">
         <div class="hamburger navbar_toggle">
-                <div class="bar bar1"></div>
-                <div class="bar bar2"></div>
-                <div class="bar bar3"></div>
-         </div>   
-            <ul class="main_nav">
-                <li>
-                    <a href="index.html" class="nav_links">Home</a>
-                </li>
-                <li>
-                    <a href="gameinfo.html" class="nav_links">Game Info</a>
-                </li>
-                <li>
-                    <a href="index.html#contact" class="nav_links">Contact Us</a>
-                </li>
-                <li>
-                    <a href="highscore.html" class="nav_links">High Scores</a>
-                </li>
-            </ul>
-        
-        </nav>
-
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+        <ul class="main_nav">
+          <li>
+            <a href="index.html" class="nav_links">Home</a>
+          </li>
+          <li>
+            <a href="gameinfo.html" class="nav_links">Game Info</a>
+          </li>
+          <li>
+            <a href="index.html#contact" class="nav_links">Contact Us</a>
+          </li>
+          <li>
+            <a href="highscore.html" class="nav_links">High Scores</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="head_container">
+      <div class="head_container">
         <h1>Private Rooms</h1>
-        </div> 
-        
-        <section class="wrapper">
+      </div>
 
+      <section class="wrapper">
         <section class="pr_container">
-           <div class="pr_item"> 
-             <p>Celebrate your next birthday or company event!</p>
-           </div>
-             
-        </section>   
-        <br>
+          <div class="pr_item">
+            <p>Celebrate your next birthday or company event!</p>
+          </div>
+        </section>
+        <br />
         <section class="form_container">
-              
-        <form action="#" >
-        <fieldset>
-            <legend>Book Now!</legend>
-        <div class="text_inputs">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-        </div>
+          <form action="#">
+            <fieldset>
+              <legend>Book Now!</legend>
+              <div class="text_inputs">
+                <label for="name">Name:&nbsp;</label>
+                <input type="text" id="name" name="name" required /><br />
+              </div>
 
+              <div class="text_inputs">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required /><br />
+              </div>
 
-        <div class="text_inputs">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required><br>
-        </div>  
-        
-        <div class="date_block">
-            <label for="date_book" id="db">Date:</label>
-            <input type="date" id="date_book" name="date_book" required>
-                       
-            <label for="room_type" id="rt">Room:</label>
-            <select name="room_type" id="room_type">
-                <option value="birthday">Birthday Room</option>
-                <option value="pr_arcade">Private Arcade</option>
-                <option value="banquet">Banquet Room</option>
-            </select><br>
-        </div>    
-            
-            
-            <label for="special_inst">Special Instructions:</label><br>
-            <textarea id="special_inst" name="special_inst" rows="20" cols="60"></textarea>
-            <input type="submit" value="Submit">
-        </fieldset>
-        </form>
+              <div class="text_inputs">
+                <label for="name">Phone:</label>
+                <input type="number" id="phone" name="phone" required /><br />
+              </div>
+
+              <div class="date_block">
+                <label for="date_book" id="db">Date:</label>
+                <input type="date" id="date_book" name="date_book" required />
+
+                <label for="room_type" id="rt">Room:</label>
+                <select name="room_type" id="room_type">
+                  <option value="birthday">Birthday Room</option>
+                  <option value="pr_arcade">Private Arcade</option>
+                  <option value="banquet">Banquet Room</option></select
+                ><br />
+              </div>
+
+              <label for="special_inst">Special Instructions:</label><br />
+              <textarea
+                id="special_inst"
+                name="special_inst"
+                rows="20"
+                cols="60"
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </fieldset>
+          </form>
         </section>
-        </section>
-    
+      </section>
     </main>
-
-
-</body>
+  </body>
 </html>

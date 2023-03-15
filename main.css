@@ -183,7 +183,7 @@ p{
     font-size: 2.5rem;
     text-shadow: 5px 5px 4px #000;
     background-color:rgba(35, 175, 240, 0.1);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 4px;
     font-family: 'Share Tech Mono', monospace;
     
@@ -217,7 +217,7 @@ p{
     margin: 0;
     background-color:rgba(35, 175, 240, 0.1);
     text-shadow: 7px 7px 4px #000;
-    border-radius: 10px;
+    border-radius: 5px;
     top: -33px;
 }
 
@@ -280,23 +280,20 @@ a:hover {
     height: 77%;
     width: 65%;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     align-items: center;
-    box-shadow: inset 10px 5px 20px 5px var(--pink);
-    transition: ease-in-out;
-    
+    box-shadow: inset 10px 5px 20px  var(--pink);
+
 }
 
 .card footer:hover {
-    box-shadow:  10px 5px 20px 5px var(--pink);
-    transition: .3s ease;
-
-
+    box-shadow:  10px 5px 20px  var(--pink);
 }
 
 .card footer a {
     margin: 3px;
+
 }
 
 .map_container {
@@ -341,11 +338,32 @@ a:hover {
     text-shadow: 5px 5px 4px #000;
 }
 
+.return_arrow{
+    font-size: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    text-shadow: 5px 0 5px #000;
+    box-shadow:inset 4px 4px 4px  rgba(254, 65, 253, .5);
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+    align-self: flex-end;
+    border-radius: 5px;
+    line-height: 1rem;
+    border:5px ridge #fff;
+    background-color: var(--light-blue);
+}
+
+.return_arrow:active {
+    box-shadow: 4px 4px 4px #000;
+}
+
+
 /* GAME INFO PAGE */
 
 
 .info_wrapper{
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 2rem;
@@ -363,6 +381,7 @@ a:hover {
     transition: max-height .5s ease-in-out;
     border-radius: 15px;
     
+    
 }
 
 .accord_head {
@@ -378,10 +397,11 @@ a:hover {
     border: none;
     border-radius: 5px;
     background-color: var(--light-blue);
+    box-shadow: inset 5px 5px 5px rgba(254, 65, 253, .5),
+    inset -6px -6px 5px rgba(164, 7, 255, .5);
+    text-shadow: 3px 3px 5px #000;
     color: #fff;
     margin-bottom: 2px;
-
-    /* box-shadow: 1px 3px 3px var(--pink) */
 }
 
 .accord_head:hover{
@@ -407,18 +427,26 @@ a:hover {
 
 .accord_item {
     text-align: center;
+    margin: 0 auto;
     font-size: 2rem;
     font-family: 'Teko', sans-serif;
     line-height:0;
+    margin-bottom: 15px;
     padding-bottom: 2rem;
-    padding: 2rem 1rem 1rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 5px;
+    background-color: var(--second-color);
+    box-shadow: 5px 5px 15px #000, 
+    inset 5px 5px 15px  rgba(254, 65, 253, .5);
 
 }
 
 .accord_item img {
-    /* height: 300px; */
-    width: 300px;
+    margin: 0 auto;
+    width: 250px;
     aspect-ratio: 3/4;
+    background-color: #fff;
+    box-shadow: 0 5px 10px; #000;
     
 }
 
@@ -428,11 +456,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border-radius: 15px; */
-    /* overflow:hidden; */
-    /* border-top: solid; */
-    /* border-image:linear-gradient(to right, transparent, var(--second-color) , transparent ) 1; */
-    
 }
 
 .pr_container{
@@ -460,6 +483,7 @@ a:hover {
 
 .pr_item p {
     font-size: 2.5rem;
+    text-shadow: 3px 3px 3px #000;
 
 }
 
@@ -481,13 +505,9 @@ a:hover {
 fieldset {
     border: 3px solid var(--second-color);
     width: 80%;
-    /* padding: 1rem; */
-    /* line-height: 2rem; */
     border-radius: 14px;
     font-family: 'Share Tech Mono', monospace;
     text-shadow: 3px 3px 5px var(--pink);
-    /* display: flex;
-    flex-direction: column; */
 }
 
 form {
@@ -503,6 +523,12 @@ form .text_inputs {
 
 }
 
+form #phone, #email {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+}
+
 form  input[type=text] {
 
 }
@@ -512,7 +538,7 @@ label {
 }
 
 input[type=text] {
-    border-radius: 14px;
+    border-radius: 5px;
     width:100%;
      
 }
@@ -530,7 +556,7 @@ input[type="date"]{
     background-color:var(--light-blue);
     padding: 8px;
     margin: 2px;
-    /* font-family: "Roboto Mono",monospace; */
+    font-family: 'Share Tech Mono', monospace;
     color: #ffffff;
     font-size: 12px;
     border: none;
@@ -541,7 +567,6 @@ input[type="date"]{
 }
 ::-webkit-calendar-picker-indicator{
     background-color: #ffffff;
-    /* padding: 5px; */
     cursor: pointer;
     border-radius: 3px;
 }
@@ -556,7 +581,6 @@ select {
     height:auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* height: 1.25rem; */
 }
 
 
@@ -567,7 +591,6 @@ option:hover{
 }
 
 #db, #rt {
-    /* width:50%; */
     margin: 0;
     padding: 0;
 }
@@ -575,9 +598,17 @@ option:hover{
 input[type="submit"]{
     width: 102%;
     padding: 1rem;
+    font-family: 'Share Tech Mono', monospace;
+    text-shadow: 4px 4px 5px #000;
+    font-size: 2rem;
+    color: #fff;
     background-color: var(--light-blue);
     border-radius: 5px;
     cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    color: var(--pink);
 }
 
 textarea{
@@ -604,6 +635,7 @@ table {
     padding: 5px;
     margin: 3px;
     font-size: 2rem;
+    background-color: var(--second-color);
     border: 1px solid var(--purple);
     border-radius: 0 0 5px 5px;
 
@@ -612,16 +644,18 @@ table {
 }
 table caption{
     font-size: 3rem;
-    text-shadow: 4px 4px 5px #000;
+    text-shadow: 3px 3px 5px #000;
     background-color: var(--light-blue);
     /* border:3px solid red; */
     border-radius: 5px 5px 0 0;
+    box-shadow: 0 5px 15px #000,
+                inset 3px 3px 5px rgba(254, 65, 253, .5);
 }
 
 td {
     padding: 3px;
     text-align: start;
-
+    text-shadow: 3px 3px 5px #000;
 }
 
 td.num {
@@ -631,6 +665,8 @@ td.num {
 th {
     text-align: start;
     padding: 5px;
+    text-shadow: 3px 3px 5px #000;
+
 }
 
 @media screen and (min-width: 913px) {
@@ -731,6 +767,10 @@ th {
         height: 100vh;
     }
 
+    .return_arrow{
+        margin-right: 4rem;
+        margin-bottom: 1rem;
+    }
     .wrapper {
     flex-direction: row;
     border-image:linear-gradient(to right, transparent, var(--second-color) , transparent ) 1;
@@ -763,5 +803,9 @@ th {
     
     select{
         font-size: 18px;
+    }
+
+    .accord_item img {
+        width: 300px;
     }
 }

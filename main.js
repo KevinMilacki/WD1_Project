@@ -22,7 +22,7 @@ accord.forEach(accord => {
         accord.classList.toggle("active");
         const accordBody = accord.nextElementSibling;
         if (accord.classList.contains("active")) {
-            accordBody.style.maxHeight = accordBody.scrollHeight + "px";
+            accordBody.style.maxHeight = (accordBody.scrollHeight + 15) + "px";
         }
         else {
             accordBody.style.maxHeight = 0;

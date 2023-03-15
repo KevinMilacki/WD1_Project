@@ -769,7 +769,7 @@ th {
 
     .return_arrow{
         margin-right: 4rem;
-        margin-bottom: 1rem;
+        margin-top: -4rem;
     }
     .wrapper {
     flex-direction: row;

@@ -283,19 +283,46 @@ a:hover {
     border-radius: 15px;
     text-align: center;
     align-items: center;
-    box-shadow: inset 10px 5px 20px  var(--pink);
+    box-shadow: 10px 5px 5px  var(--pink);
 
 }
 
 .card footer:hover {
-    box-shadow:  10px 5px 20px  var(--pink);
+    box-shadow:  20px -10px 5px   var(--pink);
 }
+
+
 
 .card footer a {
     margin: 3px;
 
 }
 
+.symbols{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+
+.symbols img {
+
+   margin: 0 3px 0 3px;
+}
+
+.sym_img {
+    justify-content: center;
+    align-items: center;
+}
+
+.sym_p {
+    /* border:1px solid blue; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .map_container {
     padding-top: 30px;
 }
@@ -340,6 +367,7 @@ a:hover {
 
 .return_arrow{
     font-size: 2rem;
+    font-weight: 800;
     padding: 1rem 1rem 1rem 1rem;
     text-shadow: 5px 0 5px #000;
     box-shadow:inset 4px 4px 4px  rgba(254, 65, 253, .5);
@@ -446,7 +474,7 @@ a:hover {
     width: 250px;
     aspect-ratio: 3/4;
     background-color: #fff;
-    box-shadow: 0 5px 10px; #000;
+    box-shadow: 0 5px 10px #000;
     
 }
 
@@ -503,11 +531,13 @@ a:hover {
 }
 
 fieldset {
-    border: 3px solid var(--second-color);
+    border: 4px solid var(--pink);
     width: 80%;
-    border-radius: 14px;
+    border-radius: 15px;
     font-family: 'Share Tech Mono', monospace;
     text-shadow: 3px 3px 5px var(--pink);
+    
+                
 }
 
 form {
@@ -529,9 +559,9 @@ form #phone, #email {
     border-radius: 5px;
 }
 
-form  input[type=text] {
+/* form input[type=text] {
 
-}
+} */
 
 label {
     font-size:1.25rem;
@@ -743,6 +773,7 @@ th {
 
     .cards {
         height: 100vh;
+    
     }
 
     .card {

@@ -15,7 +15,7 @@ Three Project features were requried for this project the ones chosen are as fol
 
 Optional features added
 
--Insights +80 
+- Insights +80 
 
 
 <br>
@@ -37,9 +37,9 @@ All items on this page direct to either one of the other pages or the contact in
 <br>
 <br>
 Mobile Score<br>
-<img src="./images/scores/IndexMobile.jpg" width="300px" height="125px"><br>
+<img src="images/scores/IndexMobile.jpg" width="300px" height="125px"><br>
 Desktop Score<br>
-<img src="./images/scores/IndexDesktop.jpg" width= "300px" height="125px" ><br>
+<img src="images/scores/IndexDesktop.jpg" width= "300px" height="125px" ><br>
 <br>
 
 ## Page 2 (Booking Information)
@@ -56,9 +56,9 @@ Desktop Score<br>
 <br>
 
 Mobile Score<br>
-<img src="./images/scores/BookingMobile.jpg" width="300" height="125"><br>
+<img src="images/scores/BookingMobile.jpg" width="300" height="125"><br>
 Desktop Score<br>
-<img src="./images/scores/BookingDesktop.jpg" width="300" height="125"><br>
+<img src="images/scores/BookingDesktop.jpg" width="300" height="125"><br>
 <br>
 
 ## Page 3 (Game Information)
@@ -76,9 +76,9 @@ Desktop Score<br>
 <br>
 
 Mobile Score<br>
-<img src="./images/scores/Gameinfomobile.jpg" width="300" height="125"><br>
+<img src="images/Scores/Gameinfomobile.jpg" width="300" height="125"><br>
 Desktop Score<br>
-<img src="./images/scores/Gameinfodesktop.jpg" width="300" height="125"><br>
+<img src="images/Scores/Gameinfodesktop.jpg" width="300" height="125"><br>
 <br>
 
 ## Page 4 (High Scores)
@@ -92,7 +92,7 @@ Desktop Score<br>
 
 <br>
 Mobile Score<br>
-<img src="./images/scores/highscoresmobile.jpg" width="300" height="125"><br>
+<img src="images/scores/highscoresmobile.jpg" width="300" height="125"><br>
 Desktop Score<br>
-<img src="./images/scores/highscoresdesktop.jpg" width="300" height="125"><br>
+<img src="images/scores/highscoresdesktop.jpg" width="300" height="125"><br>
 

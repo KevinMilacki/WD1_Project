@@ -7,14 +7,17 @@ const roomType = document.getElementById("room_type");
 const bgImg = document.querySelector(".pr_container");
 const medQ = window.matchMedia("(max-width: 932px)");
 
-// console.log(hamburger);
-
+// Responsive navBar function
 
 navT.addEventListener('click', () => {
         links.classList.toggle("show_nav");
         hamburger.classList.toggle('menu_open');
         headContainer.classList.toggle('navAct');
     })
+
+
+
+// accordian function for the Game Information page
 
 
 accord.forEach(accord => {
@@ -29,6 +32,11 @@ accord.forEach(accord => {
         }
     })
 })
+
+
+
+// Picture changing function for the booking page
+
 
 roomType.addEventListener("change", () => {
     

@@ -1,3 +1,4 @@
+
 # **Web Dev 1 Final Project**
 
 
@@ -5,6 +6,18 @@
 This is a website for a fictional arcade called "Arcadian Dreams"
 
 There are three different pages were created to show off certain skills aquired through the first 12 weeks of the web development program with Code Kentucky.
+
+Three Project features were requried for this project the ones chosen are as follows:
+
+- Responsive menu using javascript
+- Animation on hover
+- Accordion Display using Javascript
+
+Optional features added
+
+-Insights +80 
+
+
 <br>
 <br>
 <br>
@@ -23,6 +36,11 @@ All items on this page direct to either one of the other pages or the contact in
 <br>
 <br>
 <br>
+Mobile Score<br>
+<img src="./images/scores/IndexMobile.jpg" width="300px" height="125px"><br>
+Desktop Score<br>
+<img src="./images/scores/IndexDesktop.jpg" width= "300px" height="125px" ><br>
+<br>
 
 ## Page 2 (Booking Information)
 -------------------------------
@@ -37,7 +55,13 @@ All items on this page direct to either one of the other pages or the contact in
 <br>
 <br>
 
-## Page 3 (Game Infomration)
+Mobile Score<br>
+<img src="./images/scores/BookingMobile.jpg" width="300" height="125"><br>
+Desktop Score<br>
+<img src="./images/scores/BookingDesktop.jpg" width="300" height="125"><br>
+<br>
+
+## Page 3 (Game Information)
 ----------------------------
 
 
@@ -49,7 +73,13 @@ All items on this page direct to either one of the other pages or the contact in
 <br>
 <br>
 <br>
+<br>
 
+Mobile Score<br>
+<img src="./images/scores/Gameinfomobile.jpg" width="300" height="125"><br>
+Desktop Score<br>
+<img src="./images/scores/Gameinfodesktop.jpg" width="300" height="125"><br>
+<br>
 
 ## Page 4 (High Scores)
 ------------------------
@@ -59,3 +89,10 @@ All items on this page direct to either one of the other pages or the contact in
 <br>
 
 - Fully responive layout for both Moblie and Desktop.
+
+<br>
+Mobile Score<br>
+<img src="./images/scores/highscoresmobile.jpg" width="300" height="125"><br>
+Desktop Score<br>
+<img src="./images/scores/highscoresdesktop.jpg" width="300" height="125"><br>
+

@@ -5,9 +5,9 @@
 
 This is a website for a fictional arcade called "Arcadian Dreams"
 
-There are three different pages were created to show off certain skills aquired through the first 12 weeks of the web development program with Code Kentucky.
+There are three different pages which were created to show off the skills acquired through the first 12 weeks of the web development program with Code Kentucky.
 
-Three Project features were requried for this project the ones chosen are as follows:
+Three  features were requried for this project the ones chosen are as follows:
 
 - Responsive menu using javascript
 - Animation on hover
@@ -16,6 +16,7 @@ Three Project features were requried for this project the ones chosen are as fol
 Optional features added
 
 - Insights +80 
+- Responsive image using JavaScript on Booking Page
 
 
 <br>
@@ -28,9 +29,9 @@ Optional features added
 **This page is the inital page that you are presented with and has the following items:**
 <br>
 
-- Responsive menu with using Javascript
+- Responsive menu using Javascript
 - Responsive cards using Grid as a layout method
-- A contact page, with embeded map
+- A contact page, with embeded Google map
 
 All items on this page direct to either one of the other pages or the contact information at the bottom.
 <br>
@@ -50,7 +51,7 @@ Desktop Score<br>
 
 - Layout of the page is fully responsive to moblie or desktop, with the form moving from horizontal to vertical depending on device
 - Javascript used to adjust background image based on which room is selected from drop down in form, this is also fully responisive to Mobile and Desktop
-- Form validation used to make sure that items that are needed are filled out
+- HTML Form validation used to make sure that items that are needed are filled out
 <br>
 <br>
 <br>
@@ -73,7 +74,7 @@ Desktop Score<br>
 <br>
 <br>
 <br>
-<br>
+
 
 Mobile Score<br>
 <img src="images/Scores/GameInfoMobile.jpg" width="300" height="125"><br>

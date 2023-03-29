@@ -51,6 +51,7 @@ Desktop Score<br>
 
 - Layout of the page is fully responsive to moblie or desktop, with the form moving from horizontal to vertical depending on device
 - Javascript used to adjust background image based on which room is selected from drop down in form, this is also fully responisive to Mobile and Desktop
+- Animation active around form while user hovers within the element
 - HTML Form validation used to make sure that items that are needed are filled out
 <br>
 <br>

@@ -56,7 +56,8 @@ Desktop Score<br>
 <br>
 
 Mobile Score<br>
-<img src="images/scores/BookingMobile.jpg" width="300" height="125"><br>
+<img src="images/scores/BookingMobile.jpg" width="300" height="125">
+ <br>
 Desktop Score<br>
 <img src="images/scores/BookingDesktop.jpg" width="300" height="125"><br>
 <br>
